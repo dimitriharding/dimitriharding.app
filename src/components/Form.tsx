@@ -16,7 +16,7 @@ const validationSchema = Yup.object({
   email: Yup.string().required().email(),
 })
 
-const Form = ({ firstFieldRef, onCancel, onSave, loading }) => {
+const Form = ({ onCancel, onSave, loading }) => {
   return (
     <Formik
       initialValues={initialValues}
@@ -24,12 +24,10 @@ const Form = ({ firstFieldRef, onCancel, onSave, loading }) => {
       validationSchema={validationSchema}
     >
       {({ handleSubmit, values, errors }) => (
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        //@ts-ignore
         <Stack as="form" onSubmit={handleSubmit} spacing={4} zIndex="1000">
-          <InputControl
-            ref={firstFieldRef}
-            name="firstName"
-            label="First Name"
-          />
+          <InputControl name="firstName" label="First Name" />
           <InputControl name="lastName" label="Last Name" />
           <InputControl name="email" label="Email" />
           <ButtonGroup d="flex" justifyContent="flex-end">

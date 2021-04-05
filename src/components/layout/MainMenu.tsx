@@ -14,7 +14,6 @@ import {
   Box,
 } from '@chakra-ui/react'
 import { BsDot } from 'react-icons/bs'
-import SearchBox from '../ui/SearchBox'
 import Link from 'next/link'
 import { FaSun, FaMoon } from 'react-icons/fa'
 

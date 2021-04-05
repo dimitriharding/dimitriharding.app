@@ -56,12 +56,7 @@ const SubscribePopover = ({ children }) => {
           <FocusLock returnFocus persistentFocus={false}>
             <PopoverArrow />
             <PopoverCloseButton />
-            <Form
-              loading={loading}
-              firstFieldRef={firstFieldRef}
-              onSave={handleOnSave}
-              onCancel={onClose}
-            />
+            <Form loading={loading} onSave={handleOnSave} onCancel={onClose} />
           </FocusLock>
         </PopoverContent>
       </Popover>
