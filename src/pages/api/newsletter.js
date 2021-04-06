@@ -30,7 +30,7 @@ export default requireAuth((req, res) => {
       list_ids: [process.env.SENDGRID_LIST_ID],
       contacts: [
         {
-          email: email,
+          email: verified,
           custom_fields: { e1_T: 'subscribed' },
         },
       ],

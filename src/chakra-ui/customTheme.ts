@@ -84,6 +84,38 @@ const fonts = {
   body: 'Poppins',
 }
 
-const customTheme = extendTheme({ ...config, styles, fonts })
+const components = {
+  Button: {
+    // 1. We can update the base styles
+    // baseStyle: {
+    //   fontWeight: 'bold', // Normally, it is "semibold"
+    // },
+    // 2. We can add a new button size or extend existing
+    sizes: {
+      xl: {
+        h: '56px',
+        fontSize: 'lg',
+        px: '32px',
+      },
+    },
+    // 3. We can add a new visual variant
+    variants: {
+      glass: {
+        border: 'none',
+        padding: '8px 26px',
+        borderRadius: '20px',
+        marginTop: '16px',
+        transition: '0.3s',
+        whiteSpace: 'nowrap',
+        backgroundColor: '#3a6df0',
+        _hover: {
+          background: '#1e59f1',
+        },
+      },
+    },
+  },
+}
+
+const customTheme = extendTheme({ ...config, styles, fonts, components })
 
 export default customTheme
