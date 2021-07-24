@@ -11,7 +11,7 @@ const sendConfirmationEmail = (userInfo) => {
   return new Promise((resolve, reject) => {
     const message = {
       to: userInfo.to,
-      from: 'dimitriharding.com',
+      from: 'info@dimitriharding.com',
       templateId: 'd-ec3f3f84edf640b5853558facc086e7e',
       dynamic_template_data: {
         verification_link: `${
