@@ -19,7 +19,7 @@
     "@mapbox/rehype-prism": "^0.6.0",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.0.9",
-    "@sendgrid/mail": "^7.4.2",
+    "@sendgrid/mail": "^7.4.5",
     "@testing-library/dom": "7.29.6",
     "@testing-library/jest-dom": "5.11.9",
     "@testing-library/react": "11.2.5",
